@@ -16,6 +16,7 @@ RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
 # Set working directory
 WORKDIR /var/www/html
 ENV APP_URL=https://laravel.magicsheet.store
+ENV VITE_APP_URL=https://laravel.magicsheet.store
 # Copy everything
 COPY . .
 
