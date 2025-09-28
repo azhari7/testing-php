@@ -1,7 +1,6 @@
 # Use PHP base image with CLI and extensions
 # Testing cicd
 FROM php:8.2-cli
-
 # Install system dependencies
 RUN apt-get update && apt-get install -y \
     git unzip curl libpng-dev libonig-dev libxml2-dev zip \
@@ -16,7 +15,7 @@ RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
 
 # Set working directory
 WORKDIR /var/www/html
-
+ENV APP_URL=https://laravel.magicsheet.store
 # Copy everything
 COPY . .
 
