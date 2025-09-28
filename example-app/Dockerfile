@@ -1,5 +1,5 @@
 # Use PHP base image with CLI and extensions
-# Testing cicd
+# Testing
 FROM php:8.2-cli
 # Install system dependencies
 RUN apt-get update && apt-get install -y \
